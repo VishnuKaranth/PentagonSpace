@@ -1,3 +1,4 @@
+#lambda function
 s = lambda num: num + num
 res = s(5)
 print(res)
