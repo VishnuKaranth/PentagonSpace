@@ -1,10 +1,10 @@
+#Passing function as a parameter
 def fun1():
     print("inside fun1")
 
 def fun2(x,y):
     z = x+y
     print(z)
-
 def display(ptr3, ptr4):
     ptr3()
     ptr4(30,30)
