@@ -7,6 +7,6 @@ while i < 5:
     val = int(input("Enter a number: "))
     arr.insert(i, val)
     i += 1
-
+    
 for num in arr:
     print(num)
