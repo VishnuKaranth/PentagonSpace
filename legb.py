@@ -1,3 +1,4 @@
+#LEGB Rule
 x=10
 def outer():
     x = 15
