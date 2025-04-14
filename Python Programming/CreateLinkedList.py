@@ -23,7 +23,6 @@ print("Reading in reverse direction: ")
 for i in range(len(s1)-1, 0-1, -1):
     print("index: ", i, "char: ", s1[i])
     
-    
 print("================")
 for i in s1:
     print("index:", s1.index(i), "char: ", i)
