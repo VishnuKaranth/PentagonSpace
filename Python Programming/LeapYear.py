@@ -56,8 +56,8 @@ year2 = int(input("Enter the 2nd year: "))
 if year1 > year2:
     print("Invalid input.")
 else:
-    for year in range(year1, year2+1):
-        flag = leapyearrange(year)
+    for i in range(year1, year2+1):
+        flag = leapyearrange(i)
         if flag == True:
             print("Leap Years:")
             print(year, end=" ")

@@ -85,27 +85,60 @@
 # f.fighterP()
 
 #Example 2
-class Animal:
+# class Animal:
+#     def eat(self):
+#         print("Animal is eating")
+#     def sleep(self):
+#         print("Animal is sleeping")
+#     def breath(self):
+#         print("Animal is breathing")
+
+# class Tiger(Animal):
+#     def eat(self):
+#         print("Tiger hunts and eats")
+        
+
+# class Deer(Animal):
+#     def eat(self):
+#         pass
+
+# class Monkey(Animal):
+#     def eat(self):
+#         pass
+
+# t = Tiger()
+# d = Deer()
+# m = Monkey()
+# t.eat()
+# t.sleep()
+# t.breath()
+# d.eat()
+# d.sleep()
+# d.breath()
+# m.eat()
+# m.sleep()
+# m.breath()
+
+
+class Animal():
     def eat(self):
-        print("Animal is eating")
+        print("Animal is eating.")
     def sleep(self):
-        print("Animal is sleeping")
+        print("Animal is sleeping.")
     def breath(self):
-        print("Animal is breathing")
+        print("Animal is breathing.")
 
 class Tiger(Animal):
     def eat(self):
-        print("Tiger hunts and eats")
-        
-
+         print("Tiger eats and hunts") 
 class Deer(Animal):
-    def eat(self):
-        pass
-
+    # def eat(self):
+    pass
+    
 class Monkey(Animal):
-    def eat(self):
-        pass
-
+    # def eat(self):
+    pass
+    
 t = Tiger()
 d = Deer()
 m = Monkey()
