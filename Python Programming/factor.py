@@ -40,17 +40,20 @@
 
 #using def
 
-def dis_factors(n):
-    i = 1
-    while i * i <= n:
-        if n % i == 0:
-            print(i)
-            val = (n//i)
-            if i != val:
-                print(val)
-        i += 1
-    return 0
-n = int(input("Enter a number: "))
-dis_factors(n)
+# def dis_factors(n):
+#     i = 1
+#     while i * i <= n:
+#         if n % i == 0:
+#             print(i)
+#             val = (n//i)
+#             if i != val:
+#                 print(val)
+#         i += 1
+#     return 0
+# n = int(input("Enter a number: "))
+# dis_factors(n)
+
+
+            
 
         
