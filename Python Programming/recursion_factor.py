@@ -17,8 +17,7 @@ def prime(n,i,count):
         return count == 2
     if n % i == 0:
         count += 1
-        val = (n//i)
-        if i! = val:
+        if i != n//i:
             count += 1
     return prime(n,i+1,count)
     
