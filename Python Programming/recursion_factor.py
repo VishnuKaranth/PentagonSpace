@@ -11,7 +11,7 @@
 # n = int(input("Enter a number: "))
 # recr_factor(n,1)
 
-#Recursion using Prime
+#Prime Factorization using Recursion
 def prime(n,i,count):
     if (i * i) > n:
         return count == 2
