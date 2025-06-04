@@ -10,13 +10,9 @@ def createlist():
 def bubbleSortdes(arr):
     n = len(arr)
     for i in range(0, n-1):
-        #swap = False
         for j in range(0, n-i-1):
             if arr[j] < arr[j+1]:
-                arr[j+1], arr[j] = arr[j], arr[j+1]
-                #swap = True
-        #if not swap:
-                #break
+                arr[j], arr[j+1] = arr[j+1], arr[j]
     return arr
 
 def bubbleSortasc(arr):
@@ -26,9 +22,6 @@ def bubbleSortasc(arr):
         for j in range(0, n-i-1):
             if arr[j] > arr[j+1]:
                 arr[j], arr[j+1] = arr[j+1], arr[j]
-                #swap = True
-        #if not swap:
-                #break
     return arr
 
 arr = createlist()
