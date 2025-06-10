@@ -1,22 +1,23 @@
-def reverse_list(arr, i , j):
-    while i <= j:
-        arr[i], arr[j] = arr[j], arr[i]
-        i += 1
-        j -= 1
-    
-def rotate_array(arr, k):
-    n = len(arr)
-    #Step 1: Reverse the entire array
-    reverse_list(arr, k, n - 1)
-    #Step 2: Reverse the first k elements  
-    reverse_list(arr, 0, k - 1)
-    #Step 3: Reverse the remaining n-k elements
-    reverse_list(arr, 0, n - 1) 
+nums = [4,5,6,7,0,1,2]
+target = 0
+def reverse_list(nums , target):
+    st, en = 0, len(nums) - 1
+    while st <= en:
+        mid = (st + en) // 2
+        if target == nums[mid]:
+            return mid
+        if nums[st] <= nums[mid]:
+            if nums[st] <= target <= nums[mid]:
+                en = mid - 1
+            else:
+                st = mid + 1
+        else:
+            if nums[mid] <= target <= nums[en]:
+                st = mid + 1
+            else:
+                en = mid - 1
+    return -1
 
-arr = [1,2,3,4,5]
-k = 3
-if k >= len(arr):
-    k = k % len(arr)
-print("Original array:", arr)
-rotate_array(arr, k)
-print("Rotated array:", arr)
+index = reverse_list(nums, target)
+if index != -1:
+    print(f"Element {target} found at index {index}")
