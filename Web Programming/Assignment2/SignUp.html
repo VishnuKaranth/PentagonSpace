@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body>
+    <h1><Center>Sign Up Page</Center></h1><hr>
+    <form>
+        <fieldset>
+            <legend>Sign Up</legend>
+            <label>First Name</label>
+            <input type = "text" name = "First Name" placeholder="Enter First Name">
+            <label>Last Name</label>
+            <input type = "text" name = "Last Name" placeholder="Enter Last Name"><br><br>
+            <label>Email</label>
+            <input type = "email" name = "Email" placeholder="Enter Email">
+            <label>Mobile Number</label>
+            <input type = "tel" name = "Mobile Number" placeholder="Enter Mobile Number"><br><br>
+            <label>DOB</label>
+            <input type="text" id="datepicker" placeholder="Select Date">
+            <label>Gender</label>
+            <input type = "radio" name = "Gender">Male
+            <input type = "radio" name = "Gender">Female<br><br>
+            <label>Address</label>
+            <textarea placeholder="Enter Address"></textarea><br><br>
+            <label>City</label>
+            <input type = "text" name = "City" placeholder="Enter City"><br><br>
+            <label>State</label>
+            <input type = "text" name = "State" placeholder="Enter State"><br><br>
+            <label>Country</label>
+            <input type = "text" name = "Country" placeholder="Enter Country"><br><br>
+            <label>Pincode</label>
+            <input type = "text" name = "Pincode" placeholder="Enter Pincode"><br><br>
+            <label>Upload Image</label>
+            <input type = "file"><br><br>
+            <input type = "checkbox">I agree to the terms and conditions<br><br>
+            <button type = "submit">Sign Up</button><br><br>
+            Already have an account?<br>
+            <a href = "Login.html">Click here</a> to Login
+
+            <!-- ✅ Flatpickr JS (keep this at the end) -->
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script>
+    flatpickr("#datepicker");
+  </script>
+        </fieldset>
+    </form>
+    
+</body>
+</html>
