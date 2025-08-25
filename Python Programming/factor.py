@@ -39,19 +39,21 @@
 # print("The number of loops is: ",countloops)
 
 #using def
-
-# def dis_factors(n):
-#     i = 1
-#     while i * i <= n:
-#         if n % i == 0:
-#             print(i)
-#             val = (n//i)
-#             if i != val:
-#                 print(val)
-#         i += 1
-#     return 0
-# n = int(input("Enter a number: "))
-# dis_factors(n)
+#What is factor?
+# A factor of a number is an integer that divides the number without leaving a remainder.
+# For example, the factors of 12 are 1, 2, 3, 
+def dis_factors(n):
+    i = 1
+    while i * i <= n:
+        if n % i == 0:
+            print(i)
+            val = (n//i)
+            if i != val:
+                print(val)
+        i += 1
+    return 0
+n = int(input("Enter a number: "))
+dis_factors(n)
 
 
             

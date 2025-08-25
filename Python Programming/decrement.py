@@ -8,13 +8,13 @@
 # n = int(input('Enter the number'))
 # printnum(n) 
 
-#Incrementing Order
-# def printnum(n):
-#     if n <= 0:
-#         return
+# Incrementing Order
+def printnum(n):
+    if n <= 0:
+        return
     
-#     printnum(n-1)
-#     print(n)
+    printnum(n-1)
+    print(n)
 
-# n = int(input('Enter the number'))
-# printnum(n) 
+n = int(input('Enter the number'))
+printnum(n) 
